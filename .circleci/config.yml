@@ -23,6 +23,6 @@ jobs:
           name: Push application Docker image
           command: |
             docker login -u nomemires -p Imangelo6
-            docker tag dockerAppCi_dockerapp $DOCKER_HUB_USER_ID/dockerapp:$CIRCLE_SHA1
+            docker tag dockerappci_dockerapp $DOCKER_HUB_USER_ID/dockerapp:$CIRCLE_SHA1
             docker image ls
 
