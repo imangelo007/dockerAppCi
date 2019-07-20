@@ -18,10 +18,4 @@ jobs:
             docker-compose up -d
             docker-compose run dockerapp python test.py
 
-      - deploy:
-          name: Push application Docker image
-          command: |
-            docker login -u nomemires -p Imangelo6
-            docker tag dockerappci_dockerapp nomemires/dockerapp:0.0.1
-            docker push nomemires/dockerapp:0.0.1
 
