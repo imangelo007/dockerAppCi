@@ -21,7 +21,7 @@ jobs:
       - deploy:
           name: Push application Docker image
           command: |
-            docker login -u nomemires -p Imangelo66
-            docker tag dockerappci_dockerapp nomemires/dockerapp:01
-            docker push $nomemires/dockerapp:01
+            docker login -u nomemires -p Imangelo6
+            docker tag dockerappci_dockerapp nomemires/dockerapp:0.0.1
+            docker push nomemires/dockerapp:0.0.1
 
