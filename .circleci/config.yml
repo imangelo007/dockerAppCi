@@ -24,3 +24,4 @@ jobs:
             docker login -u $DOCKER_HUB_USER_ID -p $DOCKER_HUB_PWD
             docker tag dockerappci_dockerapp nomemires/dockerapp:01
             docker push $nomemires/dockerapp:01
+            
